@@ -1,0 +1,4 @@
+#main_section {
+  height: calc(100vh - #{$headerTopHeight + $footerHeight});
+  background-color: yellow;
+}
