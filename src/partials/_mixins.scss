@@ -4,12 +4,33 @@
   align-items: center;
 }
 
+@mixin flex {
+  display: flex;
+  margin: 5px;
+}
+
 @mixin listInLine {
   display: flex;
   list-style: none;
 }
 
 @mixin headerBox {
+  height: 100%;
   max-width: 50%;
   text-align: left;
+}
+
+@mixin imgBackground {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+%buttonBase {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 12px;
+  color: #fff;
 }

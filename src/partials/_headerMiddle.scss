@@ -1,13 +1,61 @@
 // HEADER MIDDLE
 #header_middle {
   height: $headerMiddleHeight;
-  
+  @include imgBackground;
+  background-image: url(../img/hero.jpg);
 
   .header_wrapper{
-    height: 250px;
+    @include flex;
+    height: 100%;
     width: 50%;
     margin: 0 auto;
     margin-right: 160px;
-    background-color: green;
+
+    .header_product_description{
+      @include headerBox;
+      color: #fff;
+      padding: 5px;
+      h2{
+        padding-top: 10px;
+      }
+      h3{
+        padding: 30px 0;
+      }
+      &_list{
+        list-style: none;
+        li {
+          padding: 10px 0;
+        }
+        i{
+          color: $iconLightGrey;
+          padding-right: 10px;
+        }
+      }
+
+      .button_container{
+        a{
+          @include flex;
+          .button_description{
+            padding-left: 5px;
+          }
+          .border{
+            margin: 0 7px;
+            border-right: 1px solid #fff;
+          }
+          i{
+            font-size: 30px;
+          }
+        }
+        a:hover{
+          background-color: $darkGreyButton;
+          color: $softGrey;
+        }
+      }
+    }
+
+    .header_product_buy{
+      @include headerBox;
+      background: #000;
+    }
   }
 }

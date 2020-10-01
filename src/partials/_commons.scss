@@ -6,6 +6,17 @@
 
 // WRAPPERS
 .container {
-  max-width: 1080px;
+  max-width: 1880px;
   margin: 0 auto;
+}
+
+// BUTTONS
+.btn {
+  @extend %buttonBase;
+
+  &_trial{
+    background-color: $lightGreyButton;
+    width: 200px;
+    font-size: 13px;
+  }
 }
