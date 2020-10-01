@@ -5,14 +5,25 @@
   .header_navbar_top{
     height: $headerTopNavbarHeight;
     @include flexCenter;
-    background-color: green;
+    justify-content: flex-end;
+    background-color: $headerBackGround;
 
-    .header_navbar_top_list{
+    &_list{
 
-      @include listInline;
+      @include listInLine;
       li {
         padding: 0 5px;
+        a {
+          color: #989898;
+          text-decoration: none;
+        }
+
+        &:hover a {
+          color: #fff;
+          text-decoration:underline;
+        }
       }
+
 
       #header_navbar_top_list_language{
         height: 25px;
@@ -23,7 +34,28 @@
 
   .header_main_navbar{
     height: $headermainNavbarHeight;
-    background-color: red;
+    background-color: $headerBackGround;
+    @include flexCenter;
+
+    &_list{
+      @include listInLine;
+      li {
+        padding: 0 5px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+        &:hover{
+          background-color: #fff;
+        }
+
+        &:hover a {
+          color: #989898;
+
+        }
+      };
+    }
   }
 }
 
