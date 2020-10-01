@@ -14,8 +14,13 @@
       li {
         padding: 0 5px;
         a {
-          color: #989898;
+          color: $lightGrey;
           text-decoration: none;
+
+          i{
+            color: $iconBlu;
+            padding-right: 8px;
+          }
         }
 
         &:hover a {
@@ -45,22 +50,24 @@
         a {
           color: #fff;
           text-decoration: none;
+
+          i{
+            font-size: 13px;
+            color: $lightGrey;
+          }
         }
         &:hover{
           background-color: #fff;
         }
 
         &:hover a {
-          color: #989898;
+          color: $lightGrey;
 
         }
       };
     }
+    &_logo{
+      margin-right: 10px;
+    }
   }
-}
-
-// HEADER MIDDLE
-#header_middle {
-  height: $headerMiddleHeight;
-  background-color: purple;
 }

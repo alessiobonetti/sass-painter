@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="dist/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <title>sass painter</title>
   </head>
   <body>
@@ -16,12 +17,12 @@
           <!-- navigation bar top right -->
           <nav class="header_navbar_top">
             <ul class="header_navbar_top_list">
-              <li><a href="#">1-877-582-6735</a></li>
-              <li><a href="#">Chat</a></li>
-              <li><a href="#">Sign In</a></li>
-              <li><a href="#">Cart</a></li>
+              <li><a href="#"><i class="fas fa-phone-alt"></i>1-877-582-6735</a></li>
+              <li><a href="#"><i class="fas fa-comment-alt"></i>Chat</a></li>
+              <li><a href="#"><i class="fas fa-user"></i>Sign In</a></li>
+              <li><a href="#"><i class="fas fa-shopping-cart"></i>Cart</a></li>
               <li>
-                <select name="language" id="header_navbar_top_list_language" multiple>
+                <select name="language" id="header_navbar_top_list_language">
                   <option value="Deutsch">Deutsch</option>
                   <option value="English">English</option>
                   <option value="Francais">Francais</option>
@@ -31,7 +32,7 @@
             </ul>
           </nav>
           <!-- /navigation bar top right -->
-
+          <!-- main navbar header -->
           <nav class="header_main_navbar">
 
             <!-- logo -->
@@ -40,24 +41,40 @@
             </div>
             <!-- /logo -->
 
+            <!-- list -->
             <ul class="header_main_navbar_list">
 
-              <li><a href="">Products</a></li>
-              <li><a href="">Brushes</a></li>
+              <li><a href="">Products <i class="fas fa-angle-down"></i></a></li>
+              <li><a href="">Brushes <i class="fas fa-angle-down"></i></a></li>
               <li><a href="">Wacom Tablets</a></li>
               <li><a href="">Special Offers</a></li>
               <li><a href="">Free Trials</a></li>
               <li><a href="">Business</a></li>
-              <li><a href="">Support</a></li>
-              <li><a href="">Learning</a></li>
+              <li><a href="">Support <i class="fas fa-angle-down"></i></a></li>
+              <li><a href="">Learning <i class="fas fa-angle-down"></i></a></li>
 
             </ul>
+            <!-- /list -->
           </nav>
+          <!-- /main navbar header -->
         </div>
         <!-- /top bar header -->
 
         <!-- middle header -->
-        <div id="header_middle"></div>
+        <div id="header_middle">
+          <!-- wrapper -->
+          <div class="header_wrapper">
+
+            <!-- product description -->
+            <div class="header_product_description"></div>
+            <!-- /product description -->
+
+            <!-- buy product -->
+            <div class="header_product_buy"></div>
+            <!-- /buy product -->
+
+          </div>
+        </div>
         <!-- /middle header -->
 
         <!-- bottom header -->

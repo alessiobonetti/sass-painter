@@ -36,6 +36,11 @@
   text-decoration: none;
 }
 
+#header_top .header_navbar_top_list li a i {
+  color: #059CFF;
+  padding-right: 8px;
+}
+
 #header_top .header_navbar_top_list li:hover a {
   color: #fff;
   text-decoration: underline;
@@ -68,6 +73,11 @@
   text-decoration: none;
 }
 
+#header_top .header_main_navbar_list li a i {
+  font-size: 13px;
+  color: #989898;
+}
+
 #header_top .header_main_navbar_list li:hover {
   background-color: #fff;
 }
@@ -76,9 +86,20 @@
   color: #989898;
 }
 
+#header_top .header_main_navbar_logo {
+  margin-right: 10px;
+}
+
 #header_middle {
   height: 400px;
-  background-color: purple;
+}
+
+#header_middle .header_wrapper {
+  height: 250px;
+  width: 50%;
+  margin: 0 auto;
+  margin-right: 160px;
+  background-color: green;
 }
 
 #main_section {

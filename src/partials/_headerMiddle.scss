@@ -1,0 +1,13 @@
+// HEADER MIDDLE
+#header_middle {
+  height: $headerMiddleHeight;
+  
+
+  .header_wrapper{
+    height: 250px;
+    width: 50%;
+    margin: 0 auto;
+    margin-right: 160px;
+    background-color: green;
+  }
+}
